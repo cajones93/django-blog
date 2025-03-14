@@ -10,8 +10,6 @@ def about_me(request):
     """
     about = About.objects.all().order_by('-updated_on').first()
 
-
-
     if request.method == "POST":
         collaborate_form = CollaborateForm(data=request.POST)
         if collaborate_form.is_valid():
