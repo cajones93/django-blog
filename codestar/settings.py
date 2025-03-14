@@ -32,7 +32,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 SECRET_KEY = 'django-insecure-0y_&$_3_*6vkw=6va1u(#ode5g$d7k*)+^_xnxijq$nv0r58zb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['.herokuapp.com', '127.0.0.1']
 
@@ -46,14 +46,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'blog',
     'crispy_forms',
     'crispy_bootstrap5',
     'django_summernote',
+    'cloudinary',
+    'blog',
     'about',
 ]
 
