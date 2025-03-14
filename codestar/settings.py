@@ -51,6 +51,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'blog',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'django_summernote',
     'about',
 ]
@@ -148,3 +150,6 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com",
     "http://127.0.0.1/"
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
